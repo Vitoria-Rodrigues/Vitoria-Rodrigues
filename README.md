@@ -5,8 +5,8 @@
   <img height="160em" src="https://github-readme-stats.vercel.app/api?username=Vitoria-Rodrigues&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
   <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vitoria-Rodrigues&layout=compact&langs_count=7&theme=tokyonight"/>
 </div>
- <br>
  <img src="https://user-images.githubusercontent.com/70407409/182483672-d28dfe2e-baf1-4a5d-ac48-7fe9880c600e.png" width="200px" height="200px" align="right">
+ <br>
 <div> 
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
