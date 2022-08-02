@@ -17,6 +17,6 @@
 </div>
 <div>
   <h2>🔍Contatos/Contacts:</h2>
-   <a href="mailto:vitoria.rf@outlook.com target:_blank"><img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" target:_blank></a>
-   <a href="https://www.linkedin.com/in/vitoria-rodrigues-ferreira-73b037222/" target:_blank"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target:_blank> </a>
+   <a href="mailto:vitoria.rf@outlook.com" target="_blank"><img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" target="_blank"></a>
+   <a href="https://www.linkedin.com/in/vitoria-rodrigues-ferreira-73b037222/" target="_blank"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"> </a>
 </div>
