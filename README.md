@@ -2,8 +2,9 @@
  <br>
  <div>
   <a href="https://github.com/henrickkauan">
-  <img height="150em" src="https://github-readme-stats.vercel.app/api?username=Vitoria-Rodrigues&show_icons=true&theme=gotham&include_all_commits=true&count_private=true"/>
+  <img height="150em" src="https://github-readme-stats.vercel.app/api?username=Vitoria-Rodrigues&show_icons=true&theme=radical&include_all_commits=true&count_private=true"/>
   <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vitoria-Rodrigues&layout=compact&langs_count=7&theme=radical"/>
+   <img src="https://user-images.githubusercontent.com/70407409/182483672-d28dfe2e-baf1-4a5d-ac48-7fe9880c600e.png" width="150px" height="150px" align="right">
 </div>
    <br>
 <div> 
@@ -18,7 +19,3 @@
    <a href="mailto:vitoria.rf@outlook.com" target="_blank"><img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" target="_blank"></a>
    <a href="https://www.linkedin.com/in/vitoria-rodrigues-ferreira-73b037222/" target="_blank"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"> </a>
 </div>
-
-<br>
-
-<img src="https://user-images.githubusercontent.com/70407409/182483672-d28dfe2e-baf1-4a5d-ac48-7fe9880c600e.png" width="150px" height="150px" align="right">
