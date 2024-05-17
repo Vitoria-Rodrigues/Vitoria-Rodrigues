@@ -1,4 +1,4 @@
-<h2>Hey! I'm Vitória Rodrigues. Welcome to my profile 🌙💻</h2>
+<h3>Hey! I'm Vitória Rodrigues. Welcome to my profile 🌙💻</h3>
  <br>
  <img src="https://user-images.githubusercontent.com/70407409/182483672-d28dfe2e-baf1-4a5d-ac48-7fe9880c600e.png" width="150px" height="150px" align="right">
  <div>
