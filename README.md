@@ -2,7 +2,7 @@
  <br>
  <div>
   <a href="https://github.com/Vitoria-Rodrigues">
-  <img height="150em" src="https://github-readme-stats.vercel.app/api?username=Vitoria-Rodrigues&show_icons=true&theme=radical&include_all_commits=true&count_private=true"/>
+  <img height="150em" src="https://github-readme-stats.vercel.app/api?username=Vitoria-Rodrigues)](https://github.com/Vitoria-Rodrigues/github-readme-stats"/>
   <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vitoria-Rodrigues&layout=compact&langs_count=7&theme=radical"/>
   <img src="https://user-images.githubusercontent.com/70407409/182483672-d28dfe2e-baf1-4a5d-ac48-7fe9880c600e.png" width="150px" height="150px" display="flex" align-items="right">
 </div>
