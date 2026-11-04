@@ -1,0 +1,29 @@
+{
+  "name": "@profile/renderer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dynamic asset generation engine for GitHub README compilation and templates.",
+  "author": "Vitória Rodrigues Ferreira <vitoriarodrigues.dev>",
+  "license": "MIT",
+  "homepage": "https://vitoriarodrigues.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vitoria-Rodrigues/Vitoria-Rodrigues.git"
+  },
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf generated tsconfig.tsbuildinfo",
+    "generate": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "zod": "catalog:shared-stack",
+    "dotenv": "catalog:shared-stack",
+    "@profile/assets": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "rimraf": "catalog:"
+  }
+}

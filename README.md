@@ -1,22 +1,77 @@
-<h3>Hey! I'm Vitória Rodrigues. Welcome to my profile 🌙💻</h3>
- <br>
- <div>
-  <a href="https://github.com/Vitoria-Rodrigues">
-  <img height="150em" src="https://github-readme-stats.vercel.app/api?username=Vitoria-Rodrigues&show_icons=true&theme=radical"/>
-  <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vitoria-Rodrigues&layout=compact&langs_count=7&theme=radical"/>
-  <img src="https://user-images.githubusercontent.com/70407409/182483672-d28dfe2e-baf1-4a5d-ac48-7fe9880c600e.png" width="150px" height="150px" display="flex" align-items="right">
-</div>
-   <br>
-<div> 
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
-  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white">
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white">
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">
-</div>
-<div>
-  <h2>Contacts:</h2>
-   <a href="mailto:vitoria.rf@outlook.com" target="_blank"><img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" target="_blank"></a>
-   <a href="https://www.linkedin.com/in/vitoria-rodrigues-ferreira-73b037222/" target="_blank"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"> </a>
-</div>
+# Frontend Software Engineer | React & TypeScript Systems Specialist
+
+Frontend software engineer specialized in the React and TypeScript ecosystem, scalable monorepo architectures, component-driven design systems, and robust client-side state orchestration. Experienced in bridging high-performance client applications with cloud serverless backends, relational databases, and transactional financial integrations.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Vitoria-Rodrigues/Vitoria-Rodrigues/generated/cards/stats/overview.svg?raw=true#gh-dark-mode-only" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Vitoria-Rodrigues/Vitoria-Rodrigues/generated/cards/stats/overview.svg?raw=true" />
+    <img alt="Vitória Rodrigues Ferreira 's GitHub Stats" src="https://raw.githubusercontent.com/Vitoria-Rodrigues/Vitoria-Rodrigues/generated/cards/stats/overview.svg?raw=true" height="200px" />
+  </picture>&nbsp;&nbsp;<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Vitoria-Rodrigues/Vitoria-Rodrigues/generated/cards/stats/languages.svg?raw=true#gh-dark-mode-only" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Vitoria-Rodrigues/Vitoria-Rodrigues/generated/cards/stats/languages.svg?raw=true" />
+    <img alt="Languages Used" src="https://raw.githubusercontent.com/Vitoria-Rodrigues/Vitoria-Rodrigues/generated/cards/stats/languages.svg?raw=true" height="200px" />
+  </picture>
+</p>
+
+---
+
+### Component Architecture & Design Systems Engineering
+
+My engineering practice centers on scalable UI architecture, design systems, and component modularity. Rather than building ad-hoc interfaces, I design deterministic, accessible, and high-performance component hierarchies adhering to Atomic Design principles:
+
+- **Component-Driven Development**: Scalable UI/UX component libraries built with React, Vite, and strict TypeScript, enforcing separation of concerns between presentation and business logic.
+- **Atomic Design & Modular Styling**: Modular architecture utilizing Atomic Design methodology paired with CSS Modules and scoped styling tokens to eliminate side-effects and guarantee style isolation.
+- **Contract-Driven UI & Schema Validation**: Strict client-side data validation using Zod schemas, guaranteeing type integrity and payload conformity across complex multi-step forms and input boundaries.
+- **Declarative Navigation & Dynamic Routing**: Type-safe client-side routing architectures with React Router DOM, managing deeply nested layouts, route guards, and authenticated views.
+
+### State Orchestration, Data Fetching & Caching
+
+To guarantee responsive and resilient user experiences across complex web applications, I architect reliable client-side state machines and data synchronization layers:
+
+- **Asynchronous Server State Management**: Declarative data fetching, intelligent cache synchronization, background refetching, and optimistic mutations implemented via TanStack Query (React Query).
+- **Global Context & Custom Hook Abstractions**: Decoupled domain state management combining React Context API with specialized custom hooks, isolating transient state from persistent server data.
+- **Optimistic UI & Mutation Handling**: Predictable state transitions with automated rollback mechanisms, providing instantaneous user feedback during high-concurrency interactions.
+
+### Cloud-Native BaaS, Serverless & Financial Integrations
+
+Complementing core frontend expertise, I build end-to-end full-stack capabilities leveraging modern cloud backends and serverless runtimes:
+
+- **Backend-as-a-Service (BaaS) Orchestration**: Comprehensive backend integration via Supabase, including relational database modeling, foreign key constraints, and optimized queries on PostgreSQL.
+- **Serverless Edge Functions**: Low-latency backend business logic authored in TypeScript and deployed on Deno Edge runtimes for secure server-side compute.
+- **Transactional Payment Lifecycles**: Full-stack payment gateway integration using Stripe API, orchestrating secure Checkout Sessions, Payment Intents, and resilient asynchronous webhook listeners.
+- **Identity & Access Governance**: Enterprise-grade authentication and Role-Based Access Control (RBAC) powered by Supabase Auth, securing protected routes and granular database operations.
+
+### Monorepo Tooling, Code Quality & Standards
+
+Translating architectural standards into maintainable, production-ready codebases through deterministic developer workflows:
+
+- **Scalable Monorepo Topologies**: Multi-package monorepo architectures orchestrated with Turborepo and pnpm workspaces, optimizing dependency caching and build pipelines across web apps, documentation, and tooling.
+- **Deterministic Static Analysis**: Rigorous linting and formatting configurations utilizing ESLint, Prettier, and strict TypeScript compiler settings (`strict: true`), eliminating runtime exceptions at compile time.
+- **Knowledge Architecture & Technical Writing**: Authoring structured technical documentation under the Diátaxis framework (Tutorials, How-To Guides, Reference, and Explanations) deployed via Docusaurus and MDX.
+
+### Featured Project: Lumini Estética Platform
+
+Architected and developed a full-scale SaaS clinic management platform embodying enterprise frontend engineering patterns:
+
+- **Architecture**: Monorepo managed with Turborepo and pnpm workspaces, coordinating the production web application, Docusaurus documentation portal, and backend serverless integrations.
+- **Frontend Stack**: Built with React, TypeScript, and Vite, featuring atomic UI components, responsive layouts, and zero-leakage CSS Modules styling.
+- **Data & State**: TanStack Query and Context API managing real-time scheduling data, client caches, and optimistic UI updates.
+- **Backend & Cloud**: Supabase PostgreSQL database schemas, Supabase Auth with RBAC, and TypeScript Deno Edge Functions handling Stripe payment processing.
+
+---
+
+### Professional Profile
+
+<table width="100%">
+  <tr>
+    <td align="center" valign="middle" width="96">
+      <a href="https://github.com/Vitoria-Rodrigues">
+        <img alt="Vitória Rodrigues" src="https://raw.githubusercontent.com/Vitoria-Rodrigues/Vitoria-Rodrigues/generated/cards/static/logo-mark.svg?raw=true" width="68px" />
+      </a>
+    </td>
+    <td valign="middle">
+      Frontend Software Engineer specialized in React, TypeScript, scalable monorepos, and cloud-connected web applications. Discover more repositories on <a href="https://github.com/Vitoria-Rodrigues"><strong>GitHub</strong></a> or visit <a href="https://vitoriarodrigues.dev"><strong>vitoriarodrigues.dev</strong></a>.
+    </td>
+  </tr>
+</table>
