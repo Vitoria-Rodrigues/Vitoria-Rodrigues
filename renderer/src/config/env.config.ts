@@ -1,7 +1,9 @@
 import dotenv from 'dotenv';
 import ProjectConfig from '../../../project.config.js';
 
-dotenv.config();
+if (process.env.GITHUB_ACTIONS !== 'true') {
+  dotenv.config();
+}
 
 const fallbackOwner = ProjectConfig.REPOSITORY_OWNER;
 const fallbackRepo = ProjectConfig.REPOSITORY_NAME;
@@ -31,7 +33,8 @@ function parseList(val: string | undefined): string[] {
 
 export const config = {
   // Only the token MUST come from the environment (secrets)
-  githubToken: process.env.RENDERER_GH_PAT ?? '',
+  githubToken:
+    process.env.RENDERER_GH_PAT || process.env.RENDERER_GH_PATH || process.env.GITHUB_TOKEN || '',
 
   // Resolve dynamically in CI or fallback to the local default from project.config
   repositoryOwner: owner || fallbackOwner,

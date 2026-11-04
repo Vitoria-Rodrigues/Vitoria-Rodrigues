@@ -31,5 +31,5 @@ jobs:
       - name: Generate and Publish Documents
         uses: ./.github/actions/generate-renderer
         with:
-          github_token: ${{ secrets.RENDERER_GH_PAT }}
+          github_token: ${{ secrets.RENDERER_GH_PATH || secrets.RENDERER_GH_PAT || secrets.GITHUB_TOKEN }}
           target_branch: ${{ github.event_name == 'workflow_dispatch' && github.ref_name || 'main' }}

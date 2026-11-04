@@ -2,13 +2,15 @@ import { z } from 'zod';
 import dotenv from 'dotenv';
 import ProjectConfig from '../../../project.config.js';
 
-dotenv.config();
+if (process.env.GITHUB_ACTIONS !== 'true') {
+  dotenv.config();
+}
 
 const fallbackOwner = ProjectConfig.REPOSITORY_OWNER;
 const fallbackRepo = ProjectConfig.REPOSITORY_NAME;
 
 export const ConfigSchema = z.object({
-  githubToken: z.string().min(1, 'RENDERER_GH_PAT is required'),
+  githubToken: z.string().min(1, 'RENDERER_GH_PAT or RENDERER_GH_PATH is required'),
   repositoryOwner: z.string().min(1, 'REPOSITORY_OWNER is required').default(fallbackOwner),
   repositoryName: z.string().min(1, 'REPOSITORY_NAME is required').default(fallbackRepo),
   targetBranch: z.string().min(1, 'TARGET_BRANCH is required').default('develop'),

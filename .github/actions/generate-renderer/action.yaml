@@ -29,6 +29,7 @@ runs:
       shell: bash
       env:
         RENDERER_GH_PAT: ${{ inputs.github_token }}
+        RENDERER_GH_PATH: ${{ inputs.github_token }}
         GITHUB_ACTIONS: 'true'
         TARGET_BRANCH: ${{ inputs.target_branch }}
       run: pnpm --filter @profile/renderer generate
