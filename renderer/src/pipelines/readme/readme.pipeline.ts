@@ -1,7 +1,7 @@
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { readFileSync, writeFileSync, mkdirSync } from 'fs';
-import { brandColors } from '@profile/assets/tokens';
+import { brandColors } from '@vitoria-rodrigues/profile-assets/tokens';
 import { fillTemplate } from '../../utils/template-fill.js';
 import { renderStatsCards } from '../../renderers/stats-card.js';
 import { uploadFileContents } from '../../clients/github.js';
@@ -24,18 +24,20 @@ export const readmePipeline: Pipeline = {
     },
   ],
   async run(stats: GitHubStats, config: Config, workspaceRoot: string): Promise<void> {
-    // 1. Resolve asset paths from the studio-assets package
+    // 1. Resolve asset paths from the profile-assets package
     const overviewTemplatePath = fileURLToPath(
-      import.meta.resolve('@profile/assets/renderer/github/cards/stats/overview.template.svg'),
+      import.meta
+        .resolve('@vitoria-rodrigues/profile-assets/renderer/github/cards/stats/overview.template.svg'),
     );
     const languagesTemplatePath = fileURLToPath(
-      import.meta.resolve('@profile/assets/renderer/github/cards/stats/languages.template.svg'),
+      import.meta
+        .resolve('@vitoria-rodrigues/profile-assets/renderer/github/cards/stats/languages.template.svg'),
     );
     const logoHorizontalSrcPath = fileURLToPath(
-      import.meta.resolve('@profile/assets/logos/logo-horizontal-multicolor.svg'),
+      import.meta.resolve('@vitoria-rodrigues/profile-assets/logos/logo-horizontal-multicolor.svg'),
     );
     const logoMarkSrcPath = fileURLToPath(
-      import.meta.resolve('@profile/assets/logos/logo-mark-round-purple.svg'),
+      import.meta.resolve('@vitoria-rodrigues/profile-assets/logos/logo-mark-round-purple.svg'),
     );
 
     // 2. Generate Stats Cards (Returns SVG strings instead of writing to disk)

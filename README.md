@@ -58,3 +58,34 @@ Architected and developed a full-scale SaaS clinic management platform embodying
 - **Frontend Stack**: Built with React, TypeScript, and Vite, featuring atomic UI components, responsive layouts, and zero-leakage CSS Modules styling.
 - **Data & State**: TanStack Query and Context API managing real-time scheduling data, client caches, and optimistic UI updates.
 - **Backend & Cloud**: Supabase PostgreSQL database schemas, Supabase Auth with RBAC, and TypeScript Deno Edge Functions handling Stripe payment processing.
+
+---
+
+<details>
+<summary>Technical Architecture & Workspace Documentation</summary>
+
+#### Repository Structure (`@vitoria-rodrigues/profile`)
+
+- **[renderer/README.md](./renderer/README.md)** (`@vitoria-rodrigues/profile-renderer`): Dynamic asset generation engine compiling SVG profile stats cards, `README.md`, `CODE_OF_CONDUCT.md`, and `LICENSE.md`.
+- **[assets/README.md](./assets/README.md)** (`@vitoria-rodrigues/profile-assets`): Design tokens, SVG icons, brand lockups, and SVG card templates.
+- **[.agents/plugins.json](./.agents/plugins.json)**: Antigravity plugin registry importing `@vitoria-rodrigues/agent-mesh` plugins via `catalog:plugins-stack`.
+- **[AGENTS.md](./AGENTS.md)**: Sovereign root context router (Layer 1).
+
+#### Pipeline Commands
+
+| Command                   | Description                                                       |
+| :------------------------ | :---------------------------------------------------------------- |
+| `pnpm generate`           | Executes all renderer pipelines (`readme`, `conduct`, `license`). |
+| `pnpm renderer:typecheck` | Runs TypeScript checks on `@vitoria-rodrigues/profile-renderer`.  |
+| `pnpm renderer:lint`      | Runs ESLint on `@vitoria-rodrigues/profile-renderer`.             |
+| `pnpm typecheck`          | Runs TypeScript checks across all workspaces via Turborepo.       |
+| `pnpm lint`               | Runs ESLint across all workspaces via Turborepo.                  |
+| `pnpm build`              | Builds all workspace targets via Turborepo.                       |
+
+#### Governance & Agent Mesh
+
+- Package management uses `pnpm@10.33.2` with `catalogMode: strict` in [pnpm-workspace.yaml](./pnpm-workspace.yaml).
+- Commits follow Conventional Commits v1.0.0 with SSH signing (`git commit -S -m "..."`) when configured.
+- Technical documentation adheres strictly to en-US and the Zero-Emoji Invariant.
+
+</details>

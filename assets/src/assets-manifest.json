@@ -1,14 +1,14 @@
 {
   "buckets": {
     "assets": {
-      "name": "tupynambalucas-assets",
+      "name": "vitoria-rodrigues-assets",
       "push": ["/images", "/three", "/org", "/fonts"],
       "pull": ["/images", "/three", "/org", "/fonts"],
       "docs": ["/images", "/org", "/fonts"],
       "web": ["/images", "/org", "/three", "/fonts"]
     },
     "creative": {
-      "name": "tupynambalucas-creative",
+      "name": "vitoria-rodrigues-creative",
       "push": ["/blender", "/illustrator", "/photoshop", "/premiere"],
       "pull": ["/blender", "/illustrator", "/photoshop", "/premiere"]
     }

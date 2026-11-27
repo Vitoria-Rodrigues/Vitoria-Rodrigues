@@ -1,5 +1,5 @@
 # ==============================================================================
-#  tupynambalucas.dev - Repository CODEOWNERS
+#  Vitoria-Rodrigues - Repository CODEOWNERS
 # ==============================================================================
 # This file defines team/user ownership for files and directories in the monorepo.
 # Rules are processed in order, with the last matching rule taking precedence.
@@ -8,28 +8,20 @@
 # ==============================================================================
 
 # Global fallback (repository-wide ownership)
-*                                                 @tupynambalucas
+*                                                 @Vitoria-Rodrigues
 
 # Infrastructure, CI/CD, and Repository Configurations
-/.github/                                        @tupynambalucas
-/.changeset/                                     @tupynambalucas
-/.vscode/                                        @tupynambalucas
-/package.json                                    @tupynambalucas
-/pnpm-lock.yaml                                  @tupynambalucas
-/pnpm-workspace.yaml                             @tupynambalucas
-/turbo.json                                      @tupynambalucas
+/.agents/                                        @Vitoria-Rodrigues
+/.github/                                        @Vitoria-Rodrigues
+/.husky/                                         @Vitoria-Rodrigues
+/.vscode/                                        @Vitoria-Rodrigues
+/package.json                                    @Vitoria-Rodrigues
+/pnpm-lock.yaml                                  @Vitoria-Rodrigues
+/pnpm-workspace.yaml                             @Vitoria-Rodrigues
+/turbo.json                                      @Vitoria-Rodrigues
 
-# Bounded Workspace: Developer Hub (Web Client, API & Core)
-/hub/                                            @tupynambalucas
+# Bounded Workspace: GitHub Profile Renderer
+/renderer/                                       @Vitoria-Rodrigues
 
-# Bounded Workspace: GitHub Profile Visualizer
-/profile/                                        @tupynambalucas
-
-# Bounded Workspace: Visual Identity & Design System (Assets & Penpot)
-/studio/                                         @tupynambalucas
-
-# Bounded Workspace: AI & DevOps Automation (MCP, scripts, remote cache)
-/tools/                                          @tupynambalucas
-
-# Centralized Documentation (Docusaurus Knowledge Base & Handbooks)
-/docs/                                           @tupynambalucas
+# Bounded Workspace: Visual Identity & Design Tokens
+/assets/                                         @Vitoria-Rodrigues
