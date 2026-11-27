@@ -7,7 +7,7 @@
 
 # Bounded Context: renderer
 
-This workspace (`@profile/renderer`) manages dynamic asset generation and document compilation, generating SVG statistics cards and compiling markdown templates into production documents.
+This workspace (`@vitoria-rodrigues/profile-renderer`) manages dynamic asset generation and document compilation, generating SVG statistics cards and compiling markdown templates into production documents.
 
 ---
 
@@ -52,7 +52,7 @@ This workspace (`@profile/renderer`) manages dynamic asset generation and docume
 1. **TypeScript Implementation**: The rendering engine MUST be implemented in TypeScript with zero compiler errors.
 2. **Modular Pipelines**: All compilation targets MUST be implemented as independent modules adhering to [references/pipeline.md](./references/pipeline.md).
 3. **Template Suffix**: Source templates MUST use the `*.template.*` naming convention.
-4. **Design Token Binding**: Text styles, layout dimensions, and palette colors MUST resolve directly from `@profile/assets`.
+4. **Design Token Binding**: Text styles, layout dimensions, and palette colors MUST resolve directly from `@vitoria-rodrigues/profile-assets`.
 5. **Base64 Font Inlining**: The Nunito font MUST be base64-encoded and inlined inside generated SVGs to bypass GitHub image sandboxing.
 6. **API Resilience**: The client MUST connect to the GitHub GraphQL API with automated retries and backoff handling.
 7. **Generated Branch Prerequisite**: An orphan branch named `generated` MUST exist in the remote repository to host SVG cards under `cards/` for raw GitHub URL serving.

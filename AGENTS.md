@@ -1,51 +1,39 @@
-# tupynambalucas.dev Agents Context
+# Vitoria-Rodrigues Profile Monorepo Agents Context
 
-This document serves as the root context router for AI agents operating in the
-tupynambalucas.dev monorepo.
+This document serves as the sovereign root context router (Layer 1) for AI agents operating in the `Vitoria-Rodrigues/Vitoria-Rodrigues` (`vitoriarodrigues.dev`) monorepo.
 
 ## Navigation
 
-- [README.md](./README.md): Serves as the dynamic GitHub Profile view (updated by the `@profile/renderer` workspace) and contains the official developer entry point and technical architecture within a toggleable details block.
-- [.agents](./.agents/AGENTS.md): Authoritative domain for agentic AI configurations, skills, plugins, and repository manipulation scripts.
-- [renderer](./renderer/AGENTS.md): Dynamic asset generator and document compilation engine producing GitHub profile SVG cards and templated Markdown.
-- [assets](./assets/README.md): Design tokens, brand icons, and visual assets for profile cards and documentation.
+- [README.md](./README.md): Dynamic GitHub Profile view (compiled by `@vitoria-rodrigues/profile-renderer` from [renderer/src/pipelines/readme/readme.template.md](./renderer/src/pipelines/readme/readme.template.md)) with workspace architecture inside a collapsible details block.
+- [.agents/plugins.json](./.agents/plugins.json): Antigravity plugin registry importing domain plugins from `@vitoria-rodrigues/agent-mesh`.
+- [renderer/AGENTS.md](./renderer/AGENTS.md): Dynamic asset generator and document compilation engine (`@vitoria-rodrigues/profile-renderer`).
+- [assets/AGENTS.md](./assets/AGENTS.md): Design tokens, brand icons, and SVG card templates (`@vitoria-rodrigues/profile-assets`).
 
 ## Architecture
 
-The repository is a lightweight pnpm monorepo with automated document compilation and dynamic GitHub profile stats generation:
+The repository is a Turborepo + pnpm monorepo (`catalogMode: strict`) automating GitHub profile stats generation and governance document compilation:
 
-- `renderer`: Document generator compiling profile statistics, licenses, and conduct files from SVG templates and GitHub GraphQL API metrics.
-- `assets`: Design tokens, logos, and vector cards consumed by the renderer pipeline.
-- `scripts`: Root automation and Git hook scripts executed via Husky.
+- **`renderer/` (`@vitoria-rodrigues/profile-renderer`)**: TypeScript pipeline engine compiling `README.md`, `CODE_OF_CONDUCT.md`, `LICENSE.md`, and SVG stats cards from GitHub GraphQL API metrics.
+- **`assets/` (`@vitoria-rodrigues/profile-assets`)**: Design tokens, brand logos, React SVG icons, and SVG card templates consumed by the renderer pipeline.
+- **`scripts/`**: Root Git hook scripts (`pre-commit.ts`, `prepare-commit-msg.ts`) executed via Husky.
 
 ## Scoped Guardrails
 
-- MUST maintain a strict senior, objective, and technical tone in all communications, logs, and documentation.
-- MUST avoid preambles, introductory chatter, conversational filler, or conclusion summaries in all responses.
-- MUST keep sentences concise, clear, and direct.
-- MUST conduct all conversational chat responses in Brazilian Portuguese (pt-BR).
-- MUST write all code, configuration, technical documentation, commit messages, and Markdown files in English (en-US).
-- MUST NOT use emojis in any conversational response, chat message, technical document, README, or skill file.
-- MUST NOT use placeholders (e.g., TODO, TBD).
-- MUST use relative paths for all Markdown links. Absolute filesystem paths are strictly
-  forbidden.
-- MUST format all files according to Prettier standards (2-space indent, max 100-character
-  line width).
-- MUST hardcode the project name and domain in all `AGENTS.md` and `README.md` files (e.g., `Tupynambalucas`, `tupynambalucas.dev`).
-- MUST NOT use template placeholder tokens like `%PROJECT_DOMAIN%` or `%PROJECT_NAME%` outside of templated assets.
-- **Routing**: When working within a specific bounded context, agents MUST read the local `AGENTS.md` file within that directory before proceeding.
+- MUST maintain a strict senior, objective, and technical tone across all communications, logs, and documentation.
+- MUST conduct conversational chat responses in Brazilian Portuguese (pt-BR) while keeping all code, configuration files, commit messages, `AGENTS.md`, and `README.md` files in English (en-US).
+- MUST NOT use emojis in any conversational response, code comment, technical document, README, or commit message (Zero-Emoji Invariant).
+- MUST edit `renderer/src/pipelines/readme/readme.template.md` (not only root `README.md`) whenever updating the root profile README so scheduled CI runs preserve changes.
+- MUST use `pnpm` exclusively and consume all dependencies via `catalog:` entries in [pnpm-workspace.yaml](./pnpm-workspace.yaml).
+- MUST consume `@vitoria-rodrigues/agent-mesh` solely via `catalog:plugins-stack` and `.agents/plugins.json` without duplicating local skills or rules inside `.agents/`.
+- MUST format all files according to Prettier standards (2-space indent, max 100-character line width).
+- MUST use relative paths for all Markdown links; absolute `file:///` paths are strictly forbidden.
+- MUST use Conventional Commits v1.0.0 (`<type>(<scope>): <description>`) and sign commits with SSH (`git commit -S -m "..."`) when `user.signingkey` is configured.
 
 ## Required Skills
 
-When performing documentation tasks in this monorepo, agents MUST activate the appropriate skill
-by name before beginning:
+When operating in this monorepo, agents MUST activate the relevant `@vitoria-rodrigues/agent-mesh` skill:
 
-- **`agent-router-expert`**: MUST be active when creating, updating, or reviewing any `AGENTS.md`
-  file anywhere in the monorepo. This skill defines the 3-layer context hierarchy standard,
-  `<context-hierarchy>` directive syntax, line budgets, and validation workflow.
-- **`markdown-expert`**: MUST be active when creating, updating, or reviewing any `README.md`,
-  `.md` skill file, or general Markdown document outside the `knowledge-base/` workspace.
-
-These skills are referenced by name only and are resolved by the active agent runtime. Do not
-reference skill files by filesystem path, as agents running in isolated container environments
-resolve skills exclusively by their registered name.
+- **`router-architect`**: Active when creating, updating, or auditing any `AGENTS.md` context router.
+- **`readme-architect`**: Active when creating, updating, or auditing any `README.md` documentation or template.
+- **`monorepo-architect`**: Active when auditing `pnpm-workspace.yaml` catalogs, `turbo.json`, `tsconfig*.json`, or `package.json` manifests.
+- **`github-flow-operator`**: Active when creating branches, commits, pull requests, or maintaining `.github/workflows/`.

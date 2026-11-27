@@ -1,4 +1,4 @@
-# @profile/renderer
+# @vitoria-rodrigues/profile-renderer
 
 Dynamic asset generation engine and document compilation workspace for GitHub profile
 statistics, SVG visualization cards, and template compilation.
@@ -33,7 +33,7 @@ Create a **Fine-Grained Personal Access Token** at [GitHub Settings > Personal A
 3. **Resource Owner**: Select your personal user account.
 4. **Repository Access**:
    - Select **All repositories** (recommended to allow the engine to collect stats from all personal repositories), or
-   - Select **Only select repositories** and include the profile repository (e.g., `tupynambalucas/tupynambalucas`) plus any repositories whose contribution metrics should be analyzed.
+   - Select **Only select repositories** and include the profile repository (e.g., `Vitoria-Rodrigues/Vitoria-Rodrigues`) plus any repositories whose contribution metrics should be analyzed.
 5. **Permissions**:
    - **Repository Permissions**:
      - `Contents`: **Read and Write** (required to upload generated cards to the `generated` branch and write updated markdown documents to `main`).

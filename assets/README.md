@@ -1,31 +1,33 @@
-# Assets Package
+# Assets Package (`@vitoria-rodrigues/profile-assets`)
 
-The `assets` package (`@tupynambalucas/assets`) exports brand identity assets, design system tokens, CSS theme definitions, and React SVG icon components.
+The `assets` package (`@vitoria-rodrigues/profile-assets`) exports brand identity assets, design system tokens, CSS theme definitions, React SVG icon components, and SVG card templates.
 
 ---
 
 ## Package Contents
 
-- **[tokens/](./src/tokens/)**: CSS variables, color scales, and theme configuration.
-- **[icons/](./src/icons/)**: React SVG icon library.
-- **[org/](./src/org/)**: SVG logos and identity mark source files.
-- **[renderer/](./src/renderer/)**: SVG card templates for stats and language generation.
-- **[assets-manifest.json](./src/assets-manifest.json)**: Asset inventory manifest.
+- **[src/tokens/](./src/tokens/)**: CSS variables, color scales, and theme configuration.
+- **[src/icons/](./src/icons/)**: React SVG icon library.
+- **[src/org/](./src/org/)**: SVG logos and identity mark source files.
+- **[src/renderer/](./src/renderer/)**: SVG card templates for stats and language generation.
+- **[src/assets-manifest.json](./src/assets-manifest.json)**: Asset inventory manifest.
 
 ---
 
 ## Usage in Monorepo
 
-Import styles and components directly in consuming applications:
+Import styles, tokens, and components directly in consuming packages:
 
 ```tsx
-import { IconGithub } from '@tupynambalucas/assets/icons';
-import '@tupynambalucas/assets/theme.css';
+import { brandColors } from '@vitoria-rodrigues/profile-assets/tokens';
+import '@vitoria-rodrigues/profile-assets/theme.css';
 ```
 
 ---
 
 ## Development Scripts
 
-- `pnpm typecheck`: Validates TypeScript type compliance across assets and token exports.
-- `pnpm lint`: Runs ESLint checks.
+| Command          | Description                                                      |
+| :--------------- | :--------------------------------------------------------------- |
+| `pnpm typecheck` | Validates TypeScript compliance across assets and token exports. |
+| `pnpm lint`      | Runs ESLint and Prettier checks.                                 |
